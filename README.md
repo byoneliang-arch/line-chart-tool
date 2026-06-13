@@ -2,8 +2,14 @@
 
 一个前后端分离的本地数据记录工具。用户可以创建多条折线，为每条折线录入按日期变化的数据，并用 ECharts 进行多折线趋势分析。
 
+<<<<<<< HEAD
 在线演示：https://line-chart-tool.onrender.com  
 源码地址：https://github.com/byoneliang-arch/line-chart-tool
+=======
+在线演示：[https://line-chart-tool.onrender.com](https://line-chart-tool.onrender.com)
+
+![项目截图](docs/screenshot.png)
+>>>>>>> 5392bce (Add project screenshot to README)
 
 ## 技术栈
 
