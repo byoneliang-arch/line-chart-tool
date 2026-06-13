@@ -63,7 +63,28 @@ docker run -d \
 
 `line-chart-data` 这个 Docker 卷会保留 SQLite 数据，不会因为容器重建而丢失。
 
-## 方式二：手动部署
+## 方式二：Render 部署
+
+Render 可以直接从 GitHub 仓库读取这个项目，并使用项目根目录的 `Dockerfile` 构建。
+
+推荐步骤：
+
+1. 把项目推送到 GitHub。
+2. 打开 Render，选择 `New` -> `Blueprint`。
+3. 连接你的 GitHub 仓库。
+4. Render 会读取项目根目录的 `render.yaml`。
+5. 确认服务名称、磁盘和环境变量后创建服务。
+
+项目里的 `render.yaml` 已配置：
+
+- Docker 环境
+- 自动部署
+- `/data` 持久化磁盘
+- `DATA_DIR=/data`
+
+部署成功后，Render 会给你一个公开访问地址。
+
+## 方式三：手动部署
 
 ### 1. 打包前端
 

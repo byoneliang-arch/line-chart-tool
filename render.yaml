@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: local-line-chart-tool
+    env: docker
+    plan: free
+    autoDeploy: true
+    disk:
+      name: line-chart-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: DATA_DIR
+        value: /data
